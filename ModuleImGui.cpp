@@ -19,21 +19,20 @@ bool ModuleImGui::Start()
 {
 	LOG("Starting glew & ImGui");
 	glewInit();
-	ImGui_ImplSdlGL3_Init(App->window->GetWindow());
+	ImGui_ImplSdlGL3_Init(App->window->GetWindowPtr());
 
 	return true;
 }
 
 update_status ModuleImGui::PreUpdate(float dt)
 {
-	ImGui_ImplSdlGL3_NewFrame(App->window->GetWindow());
+	ImGui_ImplSdlGL3_NewFrame(App->window->GetWindowPtr());
 	return(UPDATE_CONTINUE);
 }
 
 update_status ModuleImGui::Update(float dt)
 {
 
-	ImGui::ShowTestWindow();
 	ImGui::Render();
 	return UPDATE_CONTINUE;
 }

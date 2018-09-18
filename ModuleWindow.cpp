@@ -93,7 +93,7 @@ void ModuleWindow::SetTitle(const char* title)
 	SDL_SetWindowTitle(window, title);
 }
 
-SDL_Window * ModuleWindow::GetWindow()
+SDL_Window * ModuleWindow::GetWindowPtr()
 {
 	return window;
 }
