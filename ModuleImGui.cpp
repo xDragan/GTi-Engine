@@ -33,6 +33,22 @@ update_status ModuleImGui::PreUpdate(float dt)
 update_status ModuleImGui::Update(float dt)
 {
 
+	if (ImGui::Button("Open Demo", ImVec2(100, 30)))
+	{
+		demo = true;
+	}
+	if (ImGui::Button("Close Demo", ImVec2(100, 30)))
+	{
+		demo = false;
+	}
+	if (ImGui::Button("Close program", ImVec2(100, 30)))
+	{
+		return UPDATE_STOP;
+	}
+	if (demo)
+	{
+		ImGui::ShowTestWindow();
+	}
 	ImGui::Render();
 	return UPDATE_CONTINUE;
 }
