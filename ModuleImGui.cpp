@@ -2,9 +2,14 @@
 #include "Application.h"
 #include "ModuleImGui.h"
 #include "ImGui/imgui.h"
-#include "ImGui/imgui_impl_sdl_gl3.h"
+#include "ImGui/imgui_impl_opengl2.h"
+#include "ImGui/imgui_impl_sdl.h"
+#include "ImGui/imgui_internal.h"
 #include "ModuleWindow.h"
 #include "Glew\include\glew.h"
+#include "ImGui/imgui_draw.cpp"
+#include "ImGui/imgui_demo.cpp"
+
 
 #pragma comment( lib, "Glew/libx86/glew32.lib" )
 
