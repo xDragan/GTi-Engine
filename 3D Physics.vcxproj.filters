@@ -164,11 +164,5 @@
     <ClCompile Include="ImGui\imgui_draw.cpp">
       <Filter>Sources\ImGui</Filter>
     </ClCompile>
-    <ClCompile Include="ImGui\imgui_impl_opengl2.cpp">
-      <Filter>Sources\ImGui</Filter>
-    </ClCompile>
-    <ClCompile Include="ImGui\imgui_impl_sdl.cpp">
-      <Filter>Sources\ImGui</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

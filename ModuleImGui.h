@@ -1,25 +1,24 @@
-#ifndef __MODULEIMGUI__
-#define __MODULEIMGUI__
+#ifndef __MODULEIMGUI_H__
+#define __MODULEIMGUI_H__
 
 #include "Module.h"
-
-#pragma comment( lib, "Glew/libx86/glew32.lib" )
+#include "Globals.h"
 
 class ModuleImGui : public Module
 {
 public:
-
 	ModuleImGui(Application* app, bool start_enabled = true);
 	~ModuleImGui();
 
-	bool Init();
+	bool Start();
 	bool CleanUp();
 
-	update_status PreUpdate(float dt) override;
-	update_status Update(float dt) override;
+	update_status Update(float dt);
+	update_status PreUpdate(float dt);
 
 	bool demo = false;
+public:
+
 };
 
-
-#endif // __MODULE_IMGUI__			
+#endif // __MODULEIMGUI_H__
