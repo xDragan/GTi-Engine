@@ -3,6 +3,7 @@
 
 #include "Module.h"
 
+#pragma comment( lib, "Glew/libx86/glew32.lib" )
 
 class ModuleImGui : public Module
 {
