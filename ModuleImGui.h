@@ -17,6 +17,8 @@ public:
 
 	update_status PreUpdate(float dt) override;
 	update_status Update(float dt) override;
+
+	bool demo = false;
 };
 
 
