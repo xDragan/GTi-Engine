@@ -12,7 +12,6 @@ public:
 
 	ModuleWindow(Application* app, bool start_enabled = true);
 
-	// Destructor
 	virtual ~ModuleWindow();
 
 	bool Init();
@@ -21,7 +20,7 @@ public:
 	void SetTitle(const char* title);
 	SDL_Window* GetWindowPtr();
 public:
-	//The window we'll be rendering to
+	//render window
 	SDL_Window* window;
 
 	//The surface contained by the window
